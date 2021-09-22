@@ -1,4 +1,4 @@
-/*AA
+/*A
   main.c - An embedded CNC Controller with rs274/ngc (g-code) support
   Part of Grbl
   
