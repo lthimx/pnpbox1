@@ -55,7 +55,7 @@
 // If homing is enabled, homing init lock sets Grbl into an alarm state upon power up. This forces
 // the user to perform the homing cycle (or override the locks) before doing anything else. This is
 // mainly a safety feature to remind the user to home, since position is unknown to Grbl.
-#define HOMING_INIT_LOCK // Comment to disable
+//#define HOMING_INIT_LOCK // Comment to disable
 
 // Define the homing cycle patterns with bitmasks. The homing cycle first performs a search mode
 // to quickly engage the limit switches, followed by a slower locate mode, and finished by a short
@@ -176,7 +176,7 @@
 // Grbl doesn't know its position and to force the user to home before proceeding. This option forces
 // Grbl to always initialize into an ALARM state regardless of homing or not. This option is more for
 // OEMs and LinuxCNC users that would like this power-cycle behavior.
-// #define FORCE_INITIALIZATION_ALARM // Default disabled. Uncomment to enable.
+ //#define FORCE_INITIALIZATION_ALARM // Default disabled. Uncomment to enable.
 
 // ---------------------------------------------------------------------------------------
 // ADVANCED CONFIGURATION OPTIONS:
