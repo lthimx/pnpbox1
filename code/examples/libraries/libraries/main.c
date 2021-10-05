@@ -33,7 +33,8 @@ int main(void)
   settings_init(); // Load Grbl settings from EEPROM
   stepper_init();  // Configure stepper pins and interrupt timers
   system_init();   // Configure pinout pins and pin-change interrupt
-  rst_led_init();
+
+
   memset(&sys, 0, sizeof(sys));  // Clear all system variables
   sys.abort = true;   // Set abort to complete initialization
   sei(); // Enable interrupts
@@ -55,7 +56,7 @@ int main(void)
   #endif
 
 
-  
+
   // Grbl initialization loop upon power-up or a system abort. For the latter, all processes
   // will return to this loop to be cleanly re-initialized.
   for(;;) {
@@ -68,7 +69,7 @@ int main(void)
     gc_init(); // Set g-code parser to default state
     spindle_init();
 
-
+    rst_led_init();
     coolant_init();
     limits_init();
     probe_init();
@@ -78,6 +79,10 @@ int main(void)
     // Sync cleared gcode and planner positions to current system position.
     plan_sync_position();
     gc_sync_position();
+
+
+  
+
 
     // Reset system variables.
     sys.abort = false;

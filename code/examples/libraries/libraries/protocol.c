@@ -73,6 +73,7 @@ void protocol_main_loop()
   // Print welcome message
   report_init_message();
 
+
   // Check for and report alarm state after a reset, error, or an initial power up.
   if (sys.state == STATE_ALARM) {
     report_feedback_message(MESSAGE_ALARM_LOCK);
@@ -86,13 +87,11 @@ void protocol_main_loop()
     }
     system_execute_startup(line); // Execute startup script.
   }
-  rst_led_off();
-  delay_ms(100);
-  rst_led_on();
+
   // ---------------------------------------------------------------------------------
   // Primary loop! Upon a system abort, this exits back to main() to reset the system.
   // ---------------------------------------------------------------------------------
-
+  system_execute_line("$H");
   uint8_t comment = COMMENT_NONE;
   uint8_t char_counter = 0;
   uint8_t c;
