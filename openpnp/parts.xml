@@ -1,0 +1,18 @@
+<openpnp-parts>
+   <part id="FIDUCIAL-1X2" name="" height-units="Millimeters" height="0.01" package-id="FIDUCIAL-1X2" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0402_1005Metric-12pF" height-units="Millimeters" height="0.01" package-id="C_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0402_1005Metric-10uF" height-units="Millimeters" height="0.01" package-id="C_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0402_1005Metric-0.1uF" height-units="Millimeters" height="0.01" package-id="C_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0402_1005Metric-10nF" height-units="Millimeters" height="0.01" package-id="C_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="MountingHole_2mm-FIDUCIAL" height-units="Millimeters" height="0.1" package-id="MountingHole_2mm" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0402_1005Metric-100" height-units="Millimeters" height="0.01" package-id="R_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0402_1005Metric-100K" height-units="Millimeters" height="0.01" package-id="R_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0402_1005Metric-150K" height-units="Millimeters" height="0.01" package-id="R_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="SW_SPST_EVQP2-SW_Push" height-units="Millimeters" height="0.2" package-id="SW_SPST_EVQP2" speed="1.0" pick-retry-count="0"/>
+   <part id="UQFN-48-1EP_6x6mm_P0.4mm_EP4.45x4.45mm-E310-G002" height-units="Millimeters" height="0.0" package-id="UQFN-48-1EP_6x6mm_P0.4mm_EP4.45x4.45mm" speed="1.0" pick-retry-count="0"/>
+   <part id="SOIJ-8_5.3x5.3mm_P1.27mm-IS25LP128-JBLE" height-units="Millimeters" height="0.2" package-id="SOIJ-8_5.3x5.3mm_P1.27mm" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-5-SPX3819M5-L-3-3" height-units="Millimeters" height="0.0" package-id="SOT-23-5" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-5-SPX3819M5-L-1-8" height-units="Millimeters" height="0.0" package-id="SOT-23-5" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-5-SN74LVC1G07" height-units="Millimeters" height="0.0" package-id="SOT-23-5" speed="1.0" pick-retry-count="0"/>
+   <part id="crystal_FA238-TSX3225-16MHz" height-units="Millimeters" height="0.2" package-id="crystal_FA238-TSX3225" speed="1.0" pick-retry-count="0"/>
+</openpnp-parts>

@@ -91,7 +91,7 @@ void protocol_main_loop()
   // ---------------------------------------------------------------------------------
   // Primary loop! Upon a system abort, this exits back to main() to reset the system.
   // ---------------------------------------------------------------------------------
-  system_execute_line("$H");
+  //system_execute_line("$H");
   uint8_t comment = COMMENT_NONE;
   uint8_t char_counter = 0;
   uint8_t c;
