@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 42)
-    (tracks 778)
+    (tracks 776)
     (zones 0)
     (modules 62)
     (nets 64)
@@ -2077,7 +2077,7 @@
   )
 
   (module Connector_BarrelJack:BarrelJack_Horizontal (layer F.Cu) (tedit 5A1DBF6A) (tstamp 61725DB4)
-    (at 125.6538 111.78032)
+    (at 125.86768 111.4298)
     (descr "DC Barrel Jack")
     (tags "Power Jack")
     (path /564DCAAE)
@@ -3029,8 +3029,6 @@
   (segment (start 123.54339 117.36991) (end 122.6538 116.48032) (width 0.8) (layer B.Cu) (net 61))
   (segment (start 138.537896 117.36991) (end 123.54339 117.36991) (width 0.8) (layer B.Cu) (net 61))
   (segment (start 122.6538 116.48032) (end 121.24536 116.48032) (width 0.8) (layer B.Cu) (net 61))
-  (segment (start 119.6538 114.88876) (end 119.6538 111.78032) (width 0.8) (layer B.Cu) (net 61))
-  (segment (start 121.24536 116.48032) (end 119.6538 114.88876) (width 0.8) (layer B.Cu) (net 61))
 
   (zone (net 39) (net_name VIN) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
     (connect_pads yes (clearance 0.508))
