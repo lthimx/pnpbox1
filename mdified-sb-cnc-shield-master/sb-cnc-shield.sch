@@ -1695,14 +1695,14 @@ Wire Wire Line
 	3450 6100 3550 6100
 Connection ~ 3550 6100
 $Comp
-L sb-cnc-shield-rescue:CONN_01X02 P8
+L Connector_Generic:Conn_01x03 P8
 U 1 1 564DCAAE
-P 2700 6950
-F 0 "P8" H 2700 7100 50  0000 C CNN
-F 1 "12V-36V" V 2800 6950 50  0000 C CNN
-F 2 "footprints:CONN_01x02_PITCH_5.08mm" H 2700 6950 60  0001 C CNN
-F 3 "" H 2700 6950 60  0000 C CNN
-	1    2700 6950
+P 2700 7000
+F 0 "P8" H 2700 7229 50  0000 C CNN
+F 1 "12V-36V" V 2800 7000 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2700 7000 60  0001 C CNN
+F 3 "" H 2700 7000 60  0000 C CNN
+	1    2700 7000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1966,4 +1966,7 @@ Wire Wire Line
 	3550 6000 3550 6100
 Wire Wire Line
 	3550 6100 3550 6200
+Wire Wire Line
+	2500 7100 2500 7000
+Connection ~ 2500 7000
 $EndSCHEMATC

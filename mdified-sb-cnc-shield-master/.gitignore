@@ -1,0 +1,9 @@
+_autosave*
+*bak
+*.rar
+gerber
+gerber/*
+bak
+bak/*
+*.zip
+rescue-backup/
