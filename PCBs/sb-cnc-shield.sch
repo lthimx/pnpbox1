@@ -1256,9 +1256,9 @@ YSTEP
 Text GLabel 3350 3000 2    39   Input ~ 0
 XSTEP
 Text GLabel 3350 3100 2    39   Input ~ 0
-TX
+DC
 Text GLabel 3350 3200 2    39   Input ~ 0
-RX
+res
 Wire Wire Line
 	3250 2500 3350 2500
 Wire Wire Line
@@ -1963,21 +1963,166 @@ U 1 1 61767F9B
 P 1750 6750
 F 0 "P10" H 1906 6791 50  0000 L CNN
 F 1 "power switch" V 1828 6503 50  0000 L CNN
-F 2 "" H 1750 6750 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1750 6750 50  0001 C CNN
 F 3 "" H 1750 6750 50  0000 C CNN
 	1    1750 6750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1400 6700 1550 6700
+Text GLabel 2450 6900 0    60   Input ~ 0
+VIN_
 Wire Wire Line
-	2500 6900 2050 6900
-Wire Wire Line
-	2050 6900 2050 7100
-Wire Wire Line
-	2050 7100 1400 7100
-Wire Wire Line
-	1400 7100 1400 6800
+	2450 6900 2500 6900
+Text GLabel 1400 6800 0    60   Input ~ 0
+VIN_
 Wire Wire Line
 	1400 6800 1550 6800
+$Comp
+L Transistor_FET:IRF6631 Q0
+U 1 1 61840DF5
+P 4450 6700
+F 0 "Q0" H 4654 6746 50  0000 L CNN
+F 1 "IRF630" H 4654 6655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 4450 6700 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/irf6631pbf.pdf?fileId=5546d462533600a4015355e8d0561a37" H 4450 6700 50  0001 L CNN
+	1    4450 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6184791C
+P 4550 7300
+F 0 "#PWR0102" H 4550 7050 50  0001 C CNN
+F 1 "GND" H 4555 7127 50  0000 C CNN
+F 2 "" H 4550 7300 50  0001 C CNN
+F 3 "" H 4550 7300 50  0001 C CNN
+	1    4550 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6900 4550 7200
+$Comp
+L sb-cnc-shield-rescue:CONN_01X02 Pump1
+U 1 1 6189F36F
+P 4750 6350
+F 0 "Pump1" H 4828 6391 50  0000 L CNN
+F 1 "pump" H 4828 6300 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4750 6350 50  0001 C CNN
+F 3 "" H 4750 6350 50  0000 C CNN
+	1    4750 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6500 4550 6400
+Text GLabel 4550 5950 1    60   Input ~ 0
+VIN_
+Wire Wire Line
+	4550 5950 4550 6300
+$Comp
+L Device:R R6
+U 1 1 61920A00
+P 4100 7050
+F 0 "R6" H 4170 7096 50  0000 L CNN
+F 1 "10K" V 4091 7005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4030 7050 50  0001 C CNN
+F 3 "~" H 4100 7050 50  0001 C CNN
+	1    4100 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 61967CD3
+P 3900 6700
+F 0 "R7" V 3970 6746 50  0000 L CNN
+F 1 "1K" V 3891 6655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3830 6700 50  0001 C CNN
+F 3 "~" H 3900 6700 50  0001 C CNN
+	1    3900 6700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 6700 4100 6700
+Wire Wire Line
+	4100 6900 4100 6700
+Connection ~ 4100 6700
+Wire Wire Line
+	4100 6700 4250 6700
+Wire Wire Line
+	4100 7200 4550 7200
+Connection ~ 4550 7200
+Wire Wire Line
+	4550 7200 4550 7300
+Text GLabel 3500 6700 0    60   Input ~ 0
+SDA
+Wire Wire Line
+	3500 6700 3750 6700
+$Comp
+L power:+5V #PWR?
+U 1 1 61B1D8D5
+P 4450 3950
+F 0 "#PWR?" H 4450 3800 50  0001 C CNN
+F 1 "+5V" V 4465 4078 50  0000 L CNN
+F 2 "" H 4450 3950 50  0001 C CNN
+F 3 "" H 4450 3950 50  0001 C CNN
+	1    4450 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B1E602
+P 4450 4050
+F 0 "#PWR?" H 4450 3800 50  0001 C CNN
+F 1 "GND" V 4455 3922 50  0000 R CNN
+F 2 "" H 4450 4050 50  0001 C CNN
+F 3 "" H 4450 4050 50  0001 C CNN
+	1    4450 4050
+	0    1    1    0   
+$EndComp
+Text GLabel 4100 4150 0    43   Input ~ 0
+_SCL_
+Wire Wire Line
+	4450 4150 4100 4150
+Text GLabel 1850 2250 0    40   Input ~ 0
+_SDA_
+Text GLabel 1850 2400 0    40   Input ~ 0
+_SCL_
+Wire Wire Line
+	1850 2250 2050 2250
+Wire Wire Line
+	2050 2400 1850 2400
+Text GLabel 4100 4250 0    40   Input ~ 0
+_SDA_
+Wire Wire Line
+	4100 4250 4450 4250
+$Comp
+L power:+5V #PWR?
+U 1 1 61BA3AF7
+P 4450 4350
+F 0 "#PWR?" H 4450 4200 50  0001 C CNN
+F 1 "+5V" V 4465 4478 50  0000 L CNN
+F 2 "" H 4450 4350 50  0001 C CNN
+F 3 "" H 4450 4350 50  0001 C CNN
+	1    4450 4350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4100 4450 0    40   Input ~ 0
+DC
+Wire Wire Line
+	4450 4450 4100 4450
+$Comp
+L Connector_Generic:Conn_01x07 J8
+U 1 1 61BC4556
+P 4650 4250
+F 0 "J8" H 4730 4292 50  0000 L CNN
+F 1 "display" H 4730 4201 50  0000 L CNN
+F 2 "" H 4650 4250 50  0001 C CNN
+F 3 "~" H 4650 4250 50  0001 C CNN
+	1    4650 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 4550 0    40   Input ~ 0
+res
+Wire Wire Line
+	4100 4550 4450 4550
 $EndSCHEMATC
