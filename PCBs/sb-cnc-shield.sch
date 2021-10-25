@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "PnPduino "
+Date "2021-10-24"
+Rev "v1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -18,7 +18,7 @@ L sb-cnc-shield-rescue:ARDUINO_UNO_SHIELD U1
 U 1 1 56463A4A
 P 2600 2400
 F 0 "U1" H 2200 3400 60  0000 C CNN
-F 1 "ARDUINO_UNO_SHIELD" H 2600 1300 60  0000 C CNN
+F 1 "ARDUINO_UNO_SHIELD/hi five revb" H 2600 1300 60  0000 C CNN
 F 2 "footprints:ARDUINO_SHIELD" H 2600 3850 60  0001 C CNN
 F 3 "" H 2600 3850 60  0000 C CNN
 	1    2600 2400
@@ -76,7 +76,7 @@ U 1 1 564A113B
 P 10350 1950
 F 0 "P1" H 10350 2200 50  0000 C CNN
 F 1 "XMOT" V 10450 1950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 10350 1950 60  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10350 1950 60  0001 C CNN
 F 3 "" H 10350 1950 60  0000 C CNN
 	1    10350 1950
 	1    0    0    -1  
@@ -87,7 +87,7 @@ U 1 1 564A22A0
 P 10350 3400
 F 0 "P2" H 10350 3650 50  0000 C CNN
 F 1 "YMOT" V 10450 3400 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 10350 3400 60  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10350 3400 60  0001 C CNN
 F 3 "" H 10350 3400 60  0000 C CNN
 	1    10350 3400
 	1    0    0    -1  
@@ -98,7 +98,7 @@ U 1 1 564A2333
 P 10350 4850
 F 0 "P3" H 10350 5100 50  0000 C CNN
 F 1 "ZMOT" V 10450 4850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 10350 4850 60  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10350 4850 60  0001 C CNN
 F 3 "" H 10350 4850 60  0000 C CNN
 	1    10350 4850
 	1    0    0    -1  
@@ -109,7 +109,7 @@ U 1 1 564A241A
 P 10350 6300
 F 0 "P4" H 10350 6550 50  0000 C CNN
 F 1 "AMOT" V 10450 6300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 10350 6300 60  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10350 6300 60  0001 C CNN
 F 3 "" H 10350 6300 60  0000 C CNN
 	1    10350 6300
 	1    0    0    -1  
@@ -623,71 +623,6 @@ F 3 "" H 10850 6050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L sb-cnc-shield-rescue:CONN_01X04 P5
-U 1 1 564BA9FD
-P 5850 1850
-F 0 "P5" H 5850 2100 50  0000 C CNN
-F 1 "UART" V 5950 1850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 5850 1850 60  0001 C CNN
-F 3 "" H 5850 1850 60  0000 C CNN
-	1    5850 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L sb-cnc-shield-rescue:CONN_01X04 P6
-U 1 1 564BAB20
-P 5850 2500
-F 0 "P6" H 5850 2750 50  0000 C CNN
-F 1 "I2C" V 5950 2500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 5850 2500 60  0001 C CNN
-F 3 "" H 5850 2500 60  0000 C CNN
-	1    5850 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR025
-U 1 1 564BACA9
-P 5450 1550
-F 0 "#PWR025" H 5450 1400 50  0001 C CNN
-F 1 "+3.3V" H 5450 1690 50  0000 C CNN
-F 2 "" H 5450 1550 60  0000 C CNN
-F 3 "" H 5450 1550 60  0000 C CNN
-	1    5450 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR026
-U 1 1 564BACE3
-P 5100 1550
-F 0 "#PWR026" H 5100 1400 50  0001 C CNN
-F 1 "+5V" H 5100 1690 50  0000 C CNN
-F 2 "" H 5100 1550 60  0000 C CNN
-F 3 "" H 5100 1550 60  0000 C CNN
-	1    5100 1550
-	1    0    0    -1  
-$EndComp
-Text GLabel 5500 1900 0    39   Input ~ 0
-TX
-Text GLabel 5500 2000 0    39   Input ~ 0
-RX
-Text GLabel 5500 2350 0    39   Input ~ 0
-RESET
-Text GLabel 5500 2550 0    39   Input ~ 0
-SDA
-Text GLabel 5500 2650 0    39   Input ~ 0
-SCL
-$Comp
-L power:GND #PWR027
-U 1 1 564BBDEE
-P 5100 2750
-F 0 "#PWR027" H 5100 2500 50  0001 C CNN
-F 1 "GND" H 5100 2600 50  0000 C CNN
-F 2 "" H 5100 2750 60  0000 C CNN
-F 3 "" H 5100 2750 60  0000 C CNN
-	1    5100 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Jumper_NO_Small JP13
 U 1 1 564BC59D
 P 5350 3250
@@ -780,7 +715,7 @@ L Device:Jumper_NO_Small JP21
 U 1 1 564BC98D
 P 5350 4600
 F 0 "JP21" H 5350 4680 50  0001 C CNN
-F 1 "CoolEn" H 5360 4540 50  0001 C CNN
+F 1 "laser_cmd" H 5360 4540 50  0001 C CNN
 F 2 "footprints:Pin_100mil_Header_Straight_1x02" H 5350 4600 60  0001 C CNN
 F 3 "" H 5350 4600 60  0000 C CNN
 	1    5350 4600
@@ -1021,28 +956,6 @@ Wire Wire Line
 Wire Wire Line
 	10850 6500 10850 6400
 Wire Wire Line
-	5650 1900 5500 1900
-Wire Wire Line
-	5650 2000 5500 2000
-Wire Wire Line
-	5650 1700 5450 1700
-Wire Wire Line
-	5450 1700 5450 1550
-Wire Wire Line
-	5650 1800 5100 1800
-Wire Wire Line
-	5100 1800 5100 1550
-Wire Wire Line
-	5650 2450 5100 2450
-Wire Wire Line
-	5100 2450 5100 2750
-Wire Wire Line
-	5500 2650 5650 2650
-Wire Wire Line
-	5500 2550 5650 2550
-Wire Wire Line
-	5500 2350 5650 2350
-Wire Wire Line
 	5450 3650 5600 3650
 Wire Wire Line
 	5450 3450 5600 3450
@@ -1102,7 +1015,7 @@ Wire Wire Line
 	5250 4600 5100 4600
 Connection ~ 5100 4600
 Text GLabel 5700 4600 2    39   Input ~ 0
-COOLANT
+laser_cmd
 Text GLabel 5700 4500 2    39   Input ~ 0
 SPIN_DIR
 Text GLabel 5700 4400 2    39   Input ~ 0
@@ -1118,7 +1031,7 @@ L Device:Jumper_NO_Small JP22
 U 1 1 564BF2C2
 P 5350 5050
 F 0 "JP22" H 5350 5130 50  0001 C CNN
-F 1 "Abort" H 5360 4990 50  0001 C CNN
+F 1 "O_led" H 5360 4990 50  0001 C CNN
 F 2 "footprints:Pin_100mil_Header_Straight_1x02" H 5350 5050 60  0001 C CNN
 F 3 "" H 5350 5050 60  0000 C CNN
 	1    5350 5050
@@ -1129,7 +1042,7 @@ L Device:Jumper_NO_Small JP23
 U 1 1 564BF417
 P 5350 5150
 F 0 "JP23" H 5350 5230 50  0001 C CNN
-F 1 "Hold" H 5360 5090 50  0001 C CNN
+F 1 "O_sig" H 5360 5090 50  0001 C CNN
 F 2 "footprints:Pin_100mil_Header_Straight_1x02" H 5350 5150 60  0001 C CNN
 F 3 "" H 5350 5150 60  0000 C CNN
 	1    5350 5150
@@ -1140,18 +1053,18 @@ L Device:Jumper_NO_Small JP24
 U 1 1 564BF484
 P 5350 5250
 F 0 "JP24" H 5350 5330 50  0001 C CNN
-F 1 "Resume" H 5360 5190 50  0001 C CNN
+F 1 "B_led" H 5360 5190 50  0001 C CNN
 F 2 "footprints:Pin_100mil_Header_Straight_1x02" H 5350 5250 60  0001 C CNN
 F 3 "" H 5350 5250 60  0000 C CNN
 	1    5350 5250
 	1    0    0    -1  
 $EndComp
 Text GLabel 5700 5050 2    39   Input ~ 0
-ABORT
+O_led
 Text GLabel 5700 5150 2    39   Input ~ 0
-HOLD
+O_sig
 Text GLabel 5700 5250 2    39   Input ~ 0
-RESUME
+B_led
 $Comp
 L power:GND #PWR029
 U 1 1 564BF779
@@ -1191,13 +1104,13 @@ F 3 "" H 3900 1800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1850 2700 0    39   Input ~ 0
-ABORT
+O_led
 Text GLabel 1850 2800 0    39   Input ~ 0
-HOLD
+O_sig
 Text GLabel 1850 2900 0    39   Input ~ 0
-RESUME
+B_led
 Text GLabel 1850 3000 0    39   Input ~ 0
-COOLANT
+laser_cmd
 Text GLabel 1850 3100 0    39   Input ~ 0
 SDA
 Text GLabel 1850 3200 0    39   Input ~ 0
@@ -1256,9 +1169,9 @@ YSTEP
 Text GLabel 3350 3000 2    39   Input ~ 0
 XSTEP
 Text GLabel 3350 3100 2    39   Input ~ 0
-DC
-Text GLabel 3350 3200 2    39   Input ~ 0
 res
+Text GLabel 3350 3200 2    39   Input ~ 0
+DC
 Wire Wire Line
 	3250 2500 3350 2500
 Wire Wire Line
@@ -1970,8 +1883,6 @@ F 3 "" H 1750 6750 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	1400 6700 1550 6700
-Text GLabel 2450 6900 0    60   Input ~ 0
-VIN_
 Wire Wire Line
 	2450 6900 2500 6900
 Text GLabel 1400 6800 0    60   Input ~ 0
@@ -2016,7 +1927,7 @@ $EndComp
 Wire Wire Line
 	4550 6500 4550 6400
 Text GLabel 4550 5950 1    60   Input ~ 0
-VIN_
+VIN
 Wire Wire Line
 	4550 5950 4550 6300
 $Comp
@@ -2058,10 +1969,10 @@ SDA
 Wire Wire Line
 	3500 6700 3750 6700
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0103
 U 1 1 61B1D8D5
 P 4450 3950
-F 0 "#PWR?" H 4450 3800 50  0001 C CNN
+F 0 "#PWR0103" H 4450 3800 50  0001 C CNN
 F 1 "+5V" V 4465 4078 50  0000 L CNN
 F 2 "" H 4450 3950 50  0001 C CNN
 F 3 "" H 4450 3950 50  0001 C CNN
@@ -2069,10 +1980,10 @@ F 3 "" H 4450 3950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 61B1E602
 P 4450 4050
-F 0 "#PWR?" H 4450 3800 50  0001 C CNN
+F 0 "#PWR0104" H 4450 3800 50  0001 C CNN
 F 1 "GND" V 4455 3922 50  0000 R CNN
 F 2 "" H 4450 4050 50  0001 C CNN
 F 3 "" H 4450 4050 50  0001 C CNN
@@ -2096,10 +2007,10 @@ _SDA_
 Wire Wire Line
 	4100 4250 4450 4250
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0105
 U 1 1 61BA3AF7
 P 4450 4350
-F 0 "#PWR?" H 4450 4200 50  0001 C CNN
+F 0 "#PWR0105" H 4450 4200 50  0001 C CNN
 F 1 "+5V" V 4465 4478 50  0000 L CNN
 F 2 "" H 4450 4350 50  0001 C CNN
 F 3 "" H 4450 4350 50  0001 C CNN
@@ -2116,7 +2027,7 @@ U 1 1 61BC4556
 P 4650 4250
 F 0 "J8" H 4730 4292 50  0000 L CNN
 F 1 "display" H 4730 4201 50  0000 L CNN
-F 2 "" H 4650 4250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 4650 4250 50  0001 C CNN
 F 3 "~" H 4650 4250 50  0001 C CNN
 	1    4650 4250
 	1    0    0    -1  
@@ -2125,4 +2036,141 @@ Text GLabel 4100 4550 0    40   Input ~ 0
 res
 Wire Wire Line
 	4100 4550 4450 4550
+Text Label 4150 6700 0    40   ~ 0
+G
+Text Label 4550 6500 0    40   ~ 0
+D
+Text Label 4550 7050 0    40   ~ 0
+S
+Wire Wire Line
+	5700 1600 5600 1600
+$Comp
+L power:GND #PWR0106
+U 1 1 61D2C382
+P 5400 1600
+F 0 "#PWR0106" H 5400 1350 50  0001 C CNN
+F 1 "GND" V 5405 1472 50  0000 R CNN
+F 2 "" H 5400 1600 50  0001 C CNN
+F 3 "" H 5400 1600 50  0001 C CNN
+	1    5400 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 1800 5600 1800
+Wire Wire Line
+	5700 1700 5600 1700
+Wire Wire Line
+	5600 1700 5600 1600
+Connection ~ 5600 1600
+Wire Wire Line
+	5600 1600 5400 1600
+Wire Wire Line
+	5700 1900 5600 1900
+Wire Wire Line
+	5600 1900 5600 1800
+Connection ~ 5600 1800
+Wire Wire Line
+	5600 1800 5350 1800
+$Comp
+L Connector_Generic:Conn_01x08 MP1584EN_DC-DC1
+U 1 1 61D8356E
+P 5900 1900
+F 0 "MP1584EN_DC-DC1" H 5980 1892 50  0000 L CNN
+F 1 "Conn_01x08" H 5980 1801 50  0000 L CNN
+F 2 "pnp_box:MP1584EN convertisseur DC-DC" H 5900 1900 50  0001 C CNN
+F 3 "~" H 5900 1900 50  0001 C CNN
+	1    5900 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2000 5600 2000
+Wire Wire Line
+	5700 2200 5550 2200
+$Comp
+L power:GND #PWR0108
+U 1 1 61DFCFA6
+P 5300 2200
+F 0 "#PWR0108" H 5300 1950 50  0001 C CNN
+F 1 "GND" V 5305 2072 50  0000 R CNN
+F 2 "" H 5300 2200 50  0001 C CNN
+F 3 "" H 5300 2200 50  0001 C CNN
+	1    5300 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 2300 5550 2200
+Wire Wire Line
+	5550 2300 5700 2300
+Connection ~ 5550 2200
+Wire Wire Line
+	5550 2200 5300 2200
+Text GLabel 5450 2000 0    40   Input ~ 0
+5V_pi
+Wire Wire Line
+	5700 2100 5600 2100
+Wire Wire Line
+	5600 2100 5600 2000
+Connection ~ 5600 2000
+Wire Wire Line
+	5600 2000 5450 2000
+Text GLabel 5350 1800 0    40   Input ~ 0
+VIN
+Text GLabel 2450 6900 0    60   Input ~ 0
+VIN_
+$Comp
+L Connector_Generic:Conn_01x02 laser1
+U 1 1 61E9D91E
+P 5750 6950
+F 0 "laser1" H 5830 6942 50  0000 L CNN
+F 1 "Conn_01x02" H 5830 6851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5750 6950 50  0001 C CNN
+F 3 "~" H 5750 6950 50  0001 C CNN
+	1    5750 6950
+	1    0    0    -1  
+$EndComp
+Text GLabel 5450 6950 0    40   Input ~ 0
+VIN
+Wire Wire Line
+	5450 6950 5550 6950
+$Comp
+L power:GND #PWR0107
+U 1 1 61EC7E23
+P 5350 7050
+F 0 "#PWR0107" H 5350 6800 50  0001 C CNN
+F 1 "GND" H 5355 6877 50  0000 C CNN
+F 2 "" H 5350 7050 50  0001 C CNN
+F 3 "" H 5350 7050 50  0001 C CNN
+	1    5350 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 7050 5550 7050
+$Comp
+L Connector_Generic:Conn_01x02 pi_5V1
+U 1 1 61EF5DE4
+P 5450 2550
+F 0 "pi_5V1" H 5530 2542 50  0000 L CNN
+F 1 "Conn_01x02" H 5530 2451 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" H 5450 2550 50  0001 C CNN
+F 3 "~" H 5450 2550 50  0001 C CNN
+	1    5450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 61EF6DDF
+P 5000 2550
+F 0 "#PWR0109" H 5000 2300 50  0001 C CNN
+F 1 "GND" H 5005 2377 50  0000 C CNN
+F 2 "" H 5000 2550 50  0001 C CNN
+F 3 "" H 5000 2550 50  0001 C CNN
+	1    5000 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 2650 5100 2650
+Text GLabel 5100 2650 0    40   Input ~ 0
+5V_pi
+Wire Wire Line
+	5250 2550 5000 2550
 $EndSCHEMATC

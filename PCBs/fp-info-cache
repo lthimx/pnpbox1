@@ -1,4 +1,4 @@
-18638753479481024
+18640399280952339
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82067,6 +82067,13 @@ ARDUINO_SHIELD
 0
 28
 28
+pnp_box
+MP1584EN convertisseur DC-DC
+
+
+0
+8
+8
 pnp_box
 Pin_100mil_Header_Straight_1x02
 Through hole pin header
