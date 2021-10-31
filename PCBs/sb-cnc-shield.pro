@@ -1,4 +1,4 @@
-update=dim. 24 oct. 2021 21:37:55
+update=dim. 31 oct. 2021 15:38:10
 version=1
 last_client=kicad
 [cvpcb]
@@ -36,7 +36,6 @@ MinMicroViaDiameter=0.007873999999999999
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
-TrackWidth2=0.8
 ViaDiameter1=0.6
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -247,7 +246,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=5V
 Clearance=0.2
-TrackWidth=0.45
+TrackWidth=0.7
 ViaDiameter=0.6
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -258,7 +257,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=5V_pi
 Clearance=0.2
-TrackWidth=0.8
+TrackWidth=0.7
 ViaDiameter=0.6
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -278,9 +277,31 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/4]
+Name=GND
+Clearance=0.2
+TrackWidth=0.7
+ViaDiameter=0.6
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/5]
 Name=POWER
 Clearance=0.2
 TrackWidth=0.8
+ViaDiameter=0.6
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/6]
+Name=mot
+Clearance=0.2
+TrackWidth=0.5
 ViaDiameter=0.6
 ViaDrill=0.4
 uViaDiameter=0.3
