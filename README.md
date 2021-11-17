@@ -1,5 +1,5 @@
 # Pnpbox1
-basic integrated system for pick and place
+Basic integrated system for pick and place
 
 ## Visual overview
 This is a visual overview of what the prototype does... for the moment, because it will does more "usecool" things.
@@ -11,7 +11,7 @@ This is a visual overview of what the prototype does... for the moment, because 
 ![](images/global_view.jpg)
 
 ## Buttons
-This are for reset and unlock operrations but it can be re-configure... 
+This is a view of two buttons for reset and unlock operations but it can be re-configure for others actions.
 
 ![](images/buttons.jpg)
 
