@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.settings">
+        		
+        <cconfiguration id="com.sifive.toolchain.riscv64.unknown.elf.gcc.1886757096.598960758">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.sifive.toolchain.riscv64.unknown.elf.gcc.1886757096.598960758" moduleId="org.eclipse.cdt.core.settings" name="debug">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactName="${ProjName}" buildProperties="" description="" id="com.sifive.toolchain.riscv64.unknown.elf.gcc.1886757096.598960758" name="debug" parent="org.eclipse.cdt.build.core.emptycfg">
+                    					
+                    <folderInfo id="com.sifive.toolchain.riscv64.unknown.elf.gcc.1886757096.598960758." name="/" resourcePath="">
+                        						
+                        <toolChain id="com.sifive.toolchain.riscv64.unknown.elf.gcc.2085834687" name="SiFive RISC-V GNU GCC Newlib" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc">
+                            							
+                            <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.sifive.riscv64.unknown.elf.gcc.target.platform.1854215257" isAbstract="false" osList="all" superClass="com.sifive.riscv64.unknown.elf.gcc.target.platform"/>
+                            							
+                            <builder id="com.sifive.toolchain.riscv64.unknown.elf.gcc.builder.2057682003" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.builder"/>
+                            							
+                            <tool id="com.sifive.toolchain.riscv64.unknown.elf.gcc.c.compiler.1134639631" name="SiFive GNU C Compiler" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.c.compiler">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1246920861" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                                								
+                                <inputType id="com.sifive.toolchain.riscv64.unknown.elf.gcc.assembler.input.323775417" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.assembler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.sifive.toolchain.riscv64.unknown.elf.gcc.cpp.compiler.1326851035" name="SiFive GNU C++ Compiler" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.cpp.compiler"/>
+                            							
+                            <tool id="com.sifive.toolchain.riscv64.unknown.elf.gcc.c.linker.603415323" name="SiFive GNU C Linker" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.c.linker">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1747512684" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.sifive.toolchain.riscv64.unknown.elf.gcc.cpp.linker.1396415359" name="SiFive GNU C++ Linker" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.cpp.linker"/>
+                            							
+                            <tool id="com.sifive.toolchain.riscv64.unknown.elf.gcc.archiver.1347081842" name="SiFive GNU Archiver" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.archiver"/>
+                            							
+                            <tool id="com.sifive.toolchain.riscv64.unknown.elf.gcc.assembler.552942482" name="SiFive GNU Assembler" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.assembler">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.1639029294" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                                							
+                            </tool>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="freedom-metal/src"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        		
+        <cconfiguration id="com.sifive.toolchain.riscv64.unknown.elf.gcc.1886757096.1459725207">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.sifive.toolchain.riscv64.unknown.elf.gcc.1886757096.1459725207" moduleId="org.eclipse.cdt.core.settings" name="release">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactName="${ProjName}" buildProperties="" description="" id="com.sifive.toolchain.riscv64.unknown.elf.gcc.1886757096.1459725207" name="release" parent="org.eclipse.cdt.build.core.emptycfg">
+                    					
+                    <folderInfo id="com.sifive.toolchain.riscv64.unknown.elf.gcc.1886757096.1459725207." name="/" resourcePath="">
+                        						
+                        <toolChain id="com.sifive.toolchain.riscv64.unknown.elf.gcc.726883737" name="SiFive RISC-V GNU GCC Newlib" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc">
+                            							
+                            <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.sifive.riscv64.unknown.elf.gcc.target.platform.815972915" isAbstract="false" osList="all" superClass="com.sifive.riscv64.unknown.elf.gcc.target.platform"/>
+                            							
+                            <builder id="com.sifive.toolchain.riscv64.unknown.elf.gcc.builder.118307145" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.builder"/>
+                            							
+                            <tool id="com.sifive.toolchain.riscv64.unknown.elf.gcc.c.compiler.1550659907" name="SiFive GNU C Compiler" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.c.compiler">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1329081041" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                                								
+                                <inputType id="com.sifive.toolchain.riscv64.unknown.elf.gcc.assembler.input.525524747" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.assembler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.sifive.toolchain.riscv64.unknown.elf.gcc.cpp.compiler.2002919992" name="SiFive GNU C++ Compiler" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.cpp.compiler"/>
+                            							
+                            <tool id="com.sifive.toolchain.riscv64.unknown.elf.gcc.c.linker.139962297" name="SiFive GNU C Linker" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.c.linker">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1802256126" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.sifive.toolchain.riscv64.unknown.elf.gcc.cpp.linker.727201333" name="SiFive GNU C++ Linker" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.cpp.linker"/>
+                            							
+                            <tool id="com.sifive.toolchain.riscv64.unknown.elf.gcc.archiver.1019335303" name="SiFive GNU Archiver" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.archiver"/>
+                            							
+                            <tool id="com.sifive.toolchain.riscv64.unknown.elf.gcc.assembler.1344537233" name="SiFive GNU Assembler" superClass="com.sifive.toolchain.riscv64.unknown.elf.gcc.assembler">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.2092525055" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                                							
+                            </tool>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="freedom-metal/src"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        		
+        <project id="sifive-hifive1-revb-pnpbox1.null.12090163" name="sifive-hifive1-revb-pnpbox1"/>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="scannerConfiguration">
+        		
+        <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    	
+    <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
+        		
+        <buildTargets>
+            			
+            <target name="all" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+                				
+                <buildCommand>make</buildCommand>
+                				
+                <buildArguments/>
+                				
+                <buildTarget>all CONFIGURATION=${ConfigName}</buildTarget>
+                				
+                <stopOnError>true</stopOnError>
+                				
+                <useDefaultCommand>true</useDefaultCommand>
+                				
+                <runAllBuilders>true</runAllBuilders>
+                			
+            </target>
+            			
+            <target name="clean" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+                				
+                <buildCommand>make</buildCommand>
+                				
+                <buildArguments/>
+                				
+                <buildTarget>clean CONFIGURATION=${ConfigName}</buildTarget>
+                				
+                <stopOnError>true</stopOnError>
+                				
+                <useDefaultCommand>true</useDefaultCommand>
+                				
+                <runAllBuilders>true</runAllBuilders>
+                			
+            </target>
+            			
+            <target name="clean-elf2hex" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+                				
+                <buildCommand>make</buildCommand>
+                				
+                <buildArguments/>
+                				
+                <buildTarget>clean-elf2hex CONFIGURATION=${ConfigName}</buildTarget>
+                				
+                <stopOnError>true</stopOnError>
+                				
+                <useDefaultCommand>true</useDefaultCommand>
+                				
+                <runAllBuilders>true</runAllBuilders>
+                			
+            </target>
+            			
+            <target name="clean-metal" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+                				
+                <buildCommand>make</buildCommand>
+                				
+                <buildArguments/>
+                				
+                <buildTarget>clean-metal CONFIGURATION=${ConfigName}</buildTarget>
+                				
+                <stopOnError>true</stopOnError>
+                				
+                <useDefaultCommand>true</useDefaultCommand>
+                				
+                <runAllBuilders>true</runAllBuilders>
+                			
+            </target>
+            			
+            <target name="clean-software" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+                				
+                <buildCommand>make</buildCommand>
+                				
+                <buildArguments/>
+                				
+                <buildTarget>clean-software CONFIGURATION=${ConfigName}</buildTarget>
+                				
+                <stopOnError>true</stopOnError>
+                				
+                <useDefaultCommand>true</useDefaultCommand>
+                				
+                <runAllBuilders>true</runAllBuilders>
+                			
+            </target>
+            			
+            <target name="metal" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+                				
+                <buildCommand>make</buildCommand>
+                				
+                <buildArguments/>
+                				
+                <buildTarget>metal CONFIGURATION=${ConfigName}</buildTarget>
+                				
+                <stopOnError>true</stopOnError>
+                				
+                <useDefaultCommand>true</useDefaultCommand>
+                				
+                <runAllBuilders>true</runAllBuilders>
+                			
+            </target>
+            			
+            <target name="metal_install" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+                				
+                <buildCommand>make</buildCommand>
+                				
+                <buildArguments/>
+                				
+                <buildTarget>metal_install CONFIGURATION=${ConfigName}</buildTarget>
+                				
+                <stopOnError>true</stopOnError>
+                				
+                <useDefaultCommand>true</useDefaultCommand>
+                				
+                <runAllBuilders>true</runAllBuilders>
+                			
+            </target>
+            			
+            <target name="software" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+                				
+                <buildCommand>make</buildCommand>
+                				
+                <buildArguments/>
+                				
+                <buildTarget>software CONFIGURATION=${ConfigName}</buildTarget>
+                				
+                <stopOnError>true</stopOnError>
+                				
+                <useDefaultCommand>true</useDefaultCommand>
+                				
+                <runAllBuilders>true</runAllBuilders>
+                			
+            </target>
+            		
+        </buildTargets>
+        	
+    </storageModule>
+    
+</cproject>

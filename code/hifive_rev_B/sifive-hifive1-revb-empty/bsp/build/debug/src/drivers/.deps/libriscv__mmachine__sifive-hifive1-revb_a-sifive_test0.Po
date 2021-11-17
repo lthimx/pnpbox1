@@ -1,5 +1,0 @@
-src/drivers/libriscv__mmachine__sifive-hifive1-revb_a-sifive_test0.o: \
- /home/lmx/work/projects/pnpbox1/code/hifive_rev_B/sifive-hifive1-revb-empty/freedom-metal/src/drivers/sifive_test0.c \
- metal/machine/platform.h
-
-metal/machine/platform.h:

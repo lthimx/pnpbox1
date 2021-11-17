@@ -1,2 +1,0 @@
-gloss/crt0.o: \
- /home/lmx/work/projects/pnpbox1/code/hifive_rev_B/sifive-hifive1-revb-empty/freedom-metal/gloss/crt0.S
