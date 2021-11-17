@@ -1,8 +1,8 @@
 # pnpbox1
 basic integrated system for pick and place
 
-
-# This is a visual overview of what the prototype does... for the moment, because it will does more "usecool" things.
+##visual overview
+This is a visual overview of what the prototype does... for the moment, because it will does more "usecool" things.
 
 ![pnpbox1](images/visual_overview.gif)
 
