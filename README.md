@@ -16,7 +16,7 @@ This is a view of two buttons for reset and unlock operations but it can be re-c
 ![](images/buttons.jpg)
 
 ## Pnpbox1 
-This is an overview of the prototype box which contains all the mains components
+This is an overview of the prototype box which contains all the mains components, the pump too ! .
 
 ![](images/pnpbox1.jpg)
 
