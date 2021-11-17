@@ -13,7 +13,7 @@ This is a visual overview of what the prototype does... for the moment, because 
 ## Buttons
 This are for reset and unlock operrations but it can be re-configure... 
 
-![](image/buttons.jpg)
+![](images/buttons.jpg)
 
 ## Pnpbox1 
 This is an overview of the prototype box which contains all the mains components
