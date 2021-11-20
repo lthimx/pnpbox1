@@ -5,7 +5,7 @@ Arduino program will be adapted for the severals needs of the prototype then it 
 In order to understand how to program a stepper motor, here is a useful link from [Makerguides](https://www.makerguides.com/a4988-stepp$er-motor-driver-arduino-tutorial/)
 
 ## Zephyr OS
-[Zephyr OS](https://zephyrproject.org/) will be used for the system because it is based on a small-footprint kernel designed for resource-constrained and embedded systems. Moreover it is open source and it is a project supported by the zephyr community.[Here](https://docs.zephyrproject.org/latest/getting_started/index.html) is the Zephyr getting started guide.
+[Zephyr OS](https://zephyrproject.org/) will be used for the hifive rev b board because it is based on a small-footprint kernel designed for resource-constrained and embedded systems. Moreover it is open source and it is a project supported by the zephyr community.[Here](https://docs.zephyrproject.org/latest/getting_started/index.html) is the Zephyr getting started guide.
 
 
 
