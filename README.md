@@ -1,5 +1,6 @@
 <p align="center">
- <img width="200" height="86" src="/images/magnetCnC1.png" alt="\nMagnetCnC3">
+ <img width="200" height="86" src="/images/magnetCnC1.png" alt="MagnetCnC3">
+ MagnetCnC
 </p>
 
 
