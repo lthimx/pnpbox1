@@ -1,6 +1,4 @@
-<p align="center">
- <b>MagnetCnC 3</b>
-</p>
+# <center> MagnetCnC 3 </center>
 
 <p align="center">
  <img width="200" height="86" src="/images/magnetCnC1.png" alt="MagnetCnC3">
