@@ -1,5 +1,6 @@
-# Pnpbox1
-Basic integrated system for pick and place
+# MagnetCnC 3
+Integrated system prototype for pick and place, smd soldering but also laser cutting/engraving.
+The head and the moving arm of the prototype will be design to be modular and magnetic (No screwing is neeeded to change/upgrade the head or arm).
 
 ## Visual overview
 This is a visual overview of what the prototype does... for the moment, because it will does more "usecool" things.
