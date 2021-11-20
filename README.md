@@ -3,7 +3,7 @@
 
 
 <p align="center">
- <img width="150" src="/images/magnetCnC1.png" alt="MagnetCnC_3">
+ <img width="150" src="/images/magnetCnC1.png" alt="MagnetCnC 3 logo">
 
 </p>
 
