@@ -1,6 +1,6 @@
-<center>
- <h1>MagnetCnC_3</h1>
-</center>
+
+<h1 align="center">&MagnetCnC_3</h1>
+
 
 <p align="center">
  <img width="200" height="86" src="/images/magnetCnC1.png" alt="MagnetCnC3">
