@@ -1,5 +1,5 @@
 <p align="center">
- <img width="300" src="/images/magnetCnC.png" alt="MagnetCnC3">
+ <img width="100" src="/images/magnetCnC.png" alt="MagnetCnC3">
 </p>
 
 
