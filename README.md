@@ -11,7 +11,7 @@ This is a visual overview of what the prototype does... for the moment, because 
 ![](images/global_view.jpg)
 
 ## Buttons
-This is a view of two buttons for reset and unlock operations but it can be re-configure for others actions.
+This is a view of two buttons for reset and unlock operations but it can be re-configured for others actions.
 
 ![](images/buttons.jpg)
 
