@@ -10,10 +10,10 @@ In order to understand how to program a stepper motor, here is a useful link fro
 |:---:    | :---:     |:---:|
 |serial_init()| Setup serial baud rate and interrupt| OK| 
 |setting_init()| Load grbl settings from flash memory| in progress|
-|stepper_init()| Configure stepper pins and interrupt timers|
-|system_init()| Configure pinout pins and pin-change interrupt|
+|stepper_init()| Configure stepper pins and interrupt timers|in progress|
+|system_init()| Configure pinout pins and pin-change interrupt|in progress|
 |sei()| Enable interrupts| in progress|
-|serial_reset_read_buffer()| Clear serial read buffer| in progress$
+|serial_reset_read_buffer()| Clear serial read buffer| in progress|
 |gc_init()| set g-code parser to default state| in progress|
 |pump_init()| init pump| in progress|
 |rst_led_init()| init reset button | in progress |
