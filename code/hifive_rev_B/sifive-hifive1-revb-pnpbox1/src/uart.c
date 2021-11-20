@@ -1,5 +1,6 @@
 #include <string.h>
 #include <stdint.h>
+#include <stdio.h>
 #include "uart.h"
 #include "cpu.h"
 
@@ -22,7 +23,7 @@
 
 void uart_init(uint32_t baudrate)
 {
-    // Select HW I/O function 0 (IOF0) for all pins. 
+    // Select HW I/O function 0 (IOF0) for all pins.
     // IOF0 means UART mode for GPIO pins 16-17.
     IOF_SEL = 0;
 
@@ -54,11 +55,57 @@ int uart_putchar(char c)
 int uart_getchar(void)
 {
     uint32_t c;
-    
+
     while (1) {
         c = UART0_RXDATA;   // Read the RX register EXACTLY once
         if (c <= 0xFF) {    // Empty bit was not set, which means DATA is valid
             return c;
         }
     } // Loop as long empty bit is set
+}
+
+
+
+
+//----------------------------------------------------------------------
+// A gets function that stops for \n AND \r (good with PUTTY)
+//----------------------------------------------------------------------
+char *tty_gets(char *str_p, uint32_t size)
+{
+    uint32_t i;
+    int32_t c;
+
+    for (i = 0; i < size; i++) {
+        c = uart_getchar();
+        uart_putchar(c);
+
+        if (c == '\n' || c == '\r') {
+            str_p[i] = '\0';
+            return str_p;
+        } else if (c > 0xFF) {
+            return NULL;
+        }
+        str_p[i] = c;
+
+    }
+
+    if (size > 0) {
+        str_p[size-1] = '\0';
+    }
+    return str_p;
+}
+
+
+
+//----------------------------------------------------------------------
+// Hack to read ssid and pwd from terminal
+//----------------------------------------------------------------------
+void get_cmd(char *cmd, uint32_t size)
+{
+
+    printf("Enter command: ");
+    fflush(stdout);
+    while (NULL == tty_gets(cmd, size)) {}
+    printf("\r\n");
+
 }

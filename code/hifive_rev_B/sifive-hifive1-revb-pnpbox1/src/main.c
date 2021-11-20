@@ -19,10 +19,6 @@
 
 #define stepPerRevolution 200
 
-
-static char *tty_gets(char *str_p, uint32_t size);
-static void get_cmd(char *ssid, uint32_t size);
-
 static const uint32_t interactive = 1; // Set to 0 to use hardcoded SSID and pwd
 static char cmd_[STR_LEN];
 struct metal_gpio* gpio_;
@@ -34,9 +30,8 @@ int main(void)
     cpu_clock_init();
     uart_init(BAUDRATE_115200);
 
-    printf("---- HiFive1 Rev B WiFi Demo --------\r\n");
+    printf("---- Project about porting the grbl arduino code on HiFive1 Rev B   --------\r\n");
     printf("* UART: 115200 bps\r\n");
-    printf("* SPI: 80 KHz\r\n");
     printf("* CPU: 320 MHz\r\n");
 
     //gpio_ = metal_gpio_get_device(0);
@@ -67,47 +62,5 @@ int main(void)
     }
   }*/
 
-
-}
-
-//----------------------------------------------------------------------
-// A gets function that stops for \n AND \r (good with PUTTY)
-//----------------------------------------------------------------------
-static char *tty_gets(char *str_p, uint32_t size)
-{
-    uint32_t i;
-    int32_t c;
-
-    for (i = 0; i < size; i++) {
-        c = uart_getchar();
-        uart_putchar(c);
-
-        if (c == '\n' || c == '\r') {
-            str_p[i] = '\0';
-            return str_p;
-        } else if (c > 0xFF) {
-            return NULL;
-        }
-        str_p[i] = c;
-
-    }
-
-    if (size > 0) {
-        str_p[size-1] = '\0';
-    }
-    return str_p;
-}
-
-
-//----------------------------------------------------------------------
-// Hack to read ssid and pwd from terminal
-//----------------------------------------------------------------------
-static void get_cmd(char *cmd, uint32_t size)
-{
-
-    printf("Enter command: ");
-    fflush(stdout);
-    while (NULL == tty_gets(cmd, size)) {}
-    printf("\r\n");
 
 }
