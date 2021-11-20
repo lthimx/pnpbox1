@@ -1,11 +1,7 @@
 
-
-
 <p align="center">
  <img width="150" src="/images/magnetCnC1.png" alt="MagnetCnC 3 logo">
-
 </p>
-
 <h1 align="center">MagnetCnC 3</h1>
 
 
