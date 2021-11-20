@@ -81,7 +81,7 @@ int main(void)
     gc_sync_position();
 
 
-  
+
 
 
     // Reset system variables.
