@@ -1,6 +1,29 @@
-<p align="center">
- <h1 style="font-size:10vw;">MagnetCnC 3</h1>
-</p>
+<html>
+<head>
+<style>
+body {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 0.875em;
+}
+</style>
+</head>
+<body>
+
+<h1>MagnetCnC_3</h1>
+
+</body>
+</html>
 
 <p align="center">
  <img width="200" height="86" src="/images/magnetCnC1.png" alt="MagnetCnC3">
