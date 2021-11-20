@@ -1,5 +1,5 @@
-<p aligne="center">
- <title="MagnetCnC 3">
+<p align="center">
+ <b>MagnetCnC 3</b>
 </p>
 
 <p align="center">
