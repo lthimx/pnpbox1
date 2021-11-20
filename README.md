@@ -2,6 +2,10 @@
  <img width="200" src="/images/magnetCnC.png" alt="MagnetCnC3">
 </p>
 
+
+
+
+
 This is a prototype for pick and place, smd soldering but also laser cutting/engraving.
 The head and the moving arm of the prototype will be design to be modular and magnetic (No screwing is neeeded to change/upgrade the head or arm).
 
