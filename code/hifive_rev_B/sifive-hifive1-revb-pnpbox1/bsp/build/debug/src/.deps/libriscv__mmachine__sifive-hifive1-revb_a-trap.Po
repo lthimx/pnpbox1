@@ -1,0 +1,2 @@
+src/libriscv__mmachine__sifive-hifive1-revb_a-trap.o: \
+ /home/lmx/work/projects/pnpbox1/code/hifive_rev_B/sifive-hifive1-revb-pnpbox1/freedom-metal/src/trap.S

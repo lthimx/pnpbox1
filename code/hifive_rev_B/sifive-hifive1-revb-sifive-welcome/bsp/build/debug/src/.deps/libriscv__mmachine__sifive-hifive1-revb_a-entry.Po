@@ -1,2 +1,0 @@
-src/libriscv__mmachine__sifive-hifive1-revb_a-entry.o: \
- /home/lmx/work/projects/pnpbox1/code/hifive_rev_B/sifive-hifive1-revb-sifive-welcome/freedom-metal/src/entry.S
