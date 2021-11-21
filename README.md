@@ -1,6 +1,6 @@
 
 <p align="center">
- <img width="150" src="/images/magnetCnC2.png" alt="MagnetCnC 3 logo">
+ <img width="150" src="/images/magnetCnC_.png" alt="MagnetCnC 3 logo">
 </p>
 <h1 align="center">MagnetCnC 3</h1>
 
