@@ -9,7 +9,7 @@ The head and the moving arm of the prototype will be design to be modular and ma
 
 
 ## Visual overview
-This is a visual overview of what the prototype does... for the moment, because it will does more "usecool" things like soldering and laser engraving or cutting.
+This is a visual overview of what the prototype does... for the moment. In the future features like cutting, soldering and laser engraving will be added.
 
 ![pnpbox1](images/visual_overview.gif)
 
@@ -23,9 +23,11 @@ This is a view of two buttons for reset and unlock operations but it can be re-c
 ![](images/buttons.jpg)
 
 ## Pnpbox1 
-This is an overview of the prototype box which contains all the mains components, the pump too ! .
+This is an overview of the prototype box which contains all the mains components, the pump as well.
 
 ![](images/pnpbox1.jpg)
 
+
+## Build Instructions
 
 
