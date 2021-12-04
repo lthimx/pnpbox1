@@ -1422,7 +1422,7 @@ z2A
 Text GLabel 10600 3950 2    40   Input ~ 0
 z1A
 Text GLabel 10600 4050 2    40   Input ~ 0
-z1A
+z1B
 Text GLabel 8700 6150 2    40   Input ~ 0
 a2B
 Text GLabel 8700 6250 2    40   Input ~ 0
