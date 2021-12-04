@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6148)
+    (start_pass_no 6848)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -102,9 +102,10 @@
     RESET "Net-(U2-Pad5)" "Net-(U3-Pad5)" "Net-(U4-Pad5)" "Net-(U5-Pad5)" EN XSTEP XDIR
     YSTEP YDIR ZSTEP ZDIR ZLIMIT YLIMIT XLIMIT "SPIN_DIR"
     "SPIN_EN" +3V3 "Net-(U1-Pad23)" "Net-(U1-Pad16)" "_SCL_" "_SDA_" DC res
-    /D /G "B_led" "O_led" "O_sig" "Net-(conn26_1-Pad25)" "Net-(conn26_1-Pad26)" "Net-(MSA1-Pad2)"
-    "Net-(MSA1-Pad4)" "Net-(MSA1-Pad6)" "Net-(MSX1-Pad6)" "Net-(MSX1-Pad4)" "Net-(MSX1-Pad2)" "Net-(MSY1-Pad2)" "Net-(MSY1-Pad4)" "Net-(MSY1-Pad6)"
-    "Net-(MSZ1-Pad6)" "Net-(MSZ1-Pad4)" "Net-(MSZ1-Pad2)" "B_sig" "pump_ctrl" "up_light"
+    /G "B_led" "O_led" "O_sig" "Net-(conn26_1-Pad25)" "Net-(conn26_1-Pad26)" "Net-(MSA1-Pad2)" "Net-(MSA1-Pad4)"
+    "Net-(MSA1-Pad6)" "Net-(MSX1-Pad6)" "Net-(MSX1-Pad4)" "Net-(MSX1-Pad2)" "Net-(MSY1-Pad2)" "Net-(MSY1-Pad4)" "Net-(MSY1-Pad6)" "Net-(MSZ1-Pad6)"
+    "Net-(MSZ1-Pad4)" "Net-(MSZ1-Pad2)" "B_sig" "pump_ctrl" "up_light" D "Net-(Rstp1-Pad2)" "Net-(RstpX1-Pad2)"
+    "Net-(RstpY1-Pad2)" "Net-(RstpZ1-Pad2)" "Net-(Pled1-Pad2)" "Net-(Rpwr1-Pad2)" "Net-(Rpwr_1-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -115,7 +116,7 @@
     )
   )
   (class 5V
-    +5V VIN "VIN_"
+    +5V VIN "VIN_" Vin
     (clearance_class 5V)
     (via_rule 5V)
     (rule

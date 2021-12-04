@@ -27,5 +27,10 @@ This is an overview of the prototype box which contains all the mains components
 
 ![](images/pnpbox1.jpg)
 
+## DB25 pinout
+This is the pinout of the two DB25 connectors on the Pnpbox
+<p align="center">
+  <img width="750" src="/images/DB25_pinout.png" alt="DB25 pinout">
+</p>
 
 
