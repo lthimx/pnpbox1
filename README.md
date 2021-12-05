@@ -25,7 +25,7 @@ This is a view of two buttons for reset and unlock operations but it can be re-c
 ## Pnpbox1 
 This is an overview of the prototype box which contains all the mains components, the pump too ! .
 
-![](images/pnpbox1.jpg)
+![](images/protoV1.jpg)
 
 ## DB25 pinout
 This is the pinout of the two DB25 connectors on the Pnpbox
