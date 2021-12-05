@@ -33,4 +33,11 @@ This is the pinout of the two DB25 connectors on the Pnpbox
   <img width="750" src="/images/DB25_pinout.png" alt="DB25 pinout">
 </p>
 
+## global view of inside the pnpboxV1.0.1 prototype
+<p align="center">
+  <img width="750" src="/images/pnpboxProtoV1.0.1.png" alt="pnpBoxProtoV1.0.1">
+</p>
+
+
+
 
