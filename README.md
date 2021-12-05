@@ -30,7 +30,7 @@ This is an overview of the prototype box which contains all the mains components
 ## DB25 pinout
 This is the pinout of the two DB25 connectors on the Pnpbox
 <p align="center">
-  <img width="750" src="/images/DB25_pinout.png" alt="DB25 pinout">
+  <img width="750" src="/images/DB25_pinout_.png" alt="DB25 pinout">
 </p>
 
 ## Inside the pnpboxV1.0.1 prototype: Global view
