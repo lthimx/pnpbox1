@@ -903,7 +903,7 @@ U 1 1 61767F9B
 P 1200 6150
 F 0 "P10" H 1356 6191 50  0000 L CNN
 F 1 "power switch" V 1278 5903 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1200 6150 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1200 6150 50  0001 C CNN
 F 3 "" H 1200 6150 50  0000 C CNN
 	1    1200 6150
 	1    0    0    -1  
@@ -1671,7 +1671,7 @@ $EndComp
 Wire Wire Line
 	5000 6550 5000 6450
 Text GLabel 5000 6450 2    60   Input ~ 0
-Vin
+VIN
 $Comp
 L Device:LED ledA1
 U 1 1 61C24B25
@@ -1695,10 +1695,10 @@ F 3 "" H 3400 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R RstpA
+L Device:R RstpA1
 U 1 1 61C24B31
 P 3400 6700
-F 0 "RstpA" H 3470 6746 50  0000 L CNN
+F 0 "RstpA1" H 3470 6746 50  0000 L CNN
 F 1 "RstpA" V 3391 6655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3330 6700 50  0001 C CNN
 F 3 "~" H 3400 6700 50  0001 C CNN
