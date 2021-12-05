@@ -18,8 +18,8 @@
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="db25_up_pinout.svg"
    inkscape:export-filename="/home/lmx/work/projects/pnpbox1/images/DB25_pinout.png"
-   inkscape:export-xdpi="907"
-   inkscape:export-ydpi="907">
+   inkscape:export-xdpi="107.55218"
+   inkscape:export-ydpi="107.55218">
   <defs
      id="defs2">
     <clipPath
@@ -43,7 +43,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.0015258"
      inkscape:cx="223.14742"
-     inkscape:cy="261.85678"
+     inkscape:cy="301.79584"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1035,7 +1035,9 @@ UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
        x="19.05966"
        y="126.57684"
        id="text990"
-       transform="scale(0.86543784,1.1554845)"><tspan
+       transform="scale(0.86543784,1.1554845)"
+       inkscape:export-xdpi="907"
+       inkscape:export-ydpi="907"><tspan
          sodipodi:role="line"
          x="19.05966"
          y="126.57684"
@@ -1130,7 +1132,7 @@ UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
          x="19.05966"
          y="207.38197"
          style="font-size:4.23333311px;line-height:0.69999999;stroke-width:0.30572185"
-         id="tspan1038">19               x1A </tspan><tspan
+         id="tspan1038">19               x2A </tspan><tspan
          sodipodi:role="line"
          x="19.05966"
          y="211.87114"
