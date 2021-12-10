@@ -21,7 +21,7 @@
 /* Grbl officially supports the Arduino Uno, but the other supplied pin mappings are
    supplied by users, so your results may vary. This cpu_map file serves as a central
    pin mapping settings file for AVR 328p used on the Arduino Uno.  */
-   
+
 #ifdef GRBL_PLATFORM
 #error "cpu_map already defined: GRBL_PLATFORM=" GRBL_PLATFORM
 #endif
@@ -43,7 +43,7 @@
 #define Y_STEP_BIT      3  // Uno Digital Pin 3
 #define Z_STEP_BIT      4  // Uno Digital Pin 4
 #define STEP_MASK0      ((1<<X_STEP_BIT)|(1<<Y_STEP_BIT)|(1<<Z_STEP_BIT)) // All step bits on port d
-#define STEP_MASK1      ((1<<A_STEP_BIT)<<4) // All step bits on port d
+#define STEP_MASK1      ((1<<A_STEP_BIT)<<3) // All step bits on port d
 #define STEP_MASK       ((1<<X_STEP_BIT)|(1<<Y_STEP_BIT)|(1<<Z_STEP_BIT)|(1<<A_STEP_BIT)) // All step bits
 
 // Define step direction output pins. NOTE: All direction pins must be on the same port.
@@ -65,28 +65,31 @@
 #define STEPPERS_DISABLE_BIT    0  // Uno Digital Pin 8
 #define STEPPERS_DISABLE_MASK   (1<<STEPPERS_DISABLE_BIT)
 
-// Define homing/hard limit switch input pins and limit interrupt vectors. 
+// Define homing/hard limit switch input pins and limit interrupt vectors.
 // NOTE: All limit bit pins must be on the same port, but not on a port with other input pins (CONTROL).
 #define LIMIT_DDR        DDRB
 #define LIMIT_PIN        PINB
 #define LIMIT_PORT       PORTB
 #define X_LIMIT_BIT      1  // Uno Digital Pin 9
 #define Y_LIMIT_BIT      2  // Uno Digital Pin 10
-#ifdef VARIABLE_SPINDLE // Z Limit pin and spindle enabled swapped to access hardware PWM on Pin 11.  
+
+
+#ifdef VARIABLE_SPINDLE // Z Limit pin and spindle enabled swapped to access hardware PWM on Pin 11.
   #define Z_LIMIT_BIT	   4 // Uno Digital Pin 12
 #else
-  #define Z_LIMIT_BIT    3  // Uno Digital Pin 11
+  #define Z_LIMIT_BIT    4  // Uno Digital Pin 11
 #endif
+
 #define LIMIT_MASK       ((1<<X_LIMIT_BIT)|(1<<Y_LIMIT_BIT)|(1<<Z_LIMIT_BIT)) // All limit bits
 #define LIMIT_INT        PCIE0  // Pin change interrupt enable pin
-#define LIMIT_INT_vect   PCINT0_vect 
+#define LIMIT_INT_vect   PCINT0_vect
 #define LIMIT_PCMSK      PCMSK0 // Pin change interrupt register
 
 // Define spindle enable and spindle direction output pins.
 #define SPINDLE_ENABLE_DDR    DDRC
 #define SPINDLE_ENABLE_PORT   PORTC
 // Z Limit pin and spindle PWM/enable pin swapped to access hardware PWM on Pin 11.
-#ifdef VARIABLE_SPINDLE 
+#ifdef VARIABLE_SPINDLE
   #ifdef USE_SPINDLE_DIR_AS_ENABLE_PIN
     // If enabled, spindle direction pin now used as spindle enable, while PWM remains on D11.
     #define SPINDLE_ENABLE_BIT    3  // Uno Digital Pin 13 (NOTE: D13 can't be pulled-high input due to LED.)
@@ -101,18 +104,18 @@
   //#define SPINDLE_DIRECTION_PORT  PORTB
   //#define SPINDLE_DIRECTION_BIT   5  // Uno Digital Pin 13 (NOTE: D13 can't be pulled-high input due to LED.)
 #endif
-  
+
 // Define flood and mist coolant enable output pins.
 // NOTE: Uno analog pins 4 and 5 are reserved for an i2c interface, and may be installed at
 // a later date if flash and memory space allows.
 //#define COOLANT_FLOOD_DDR   DDRC
 //#define COOLANT_FLOOD_PORT  PORTC
-//#define COOLANT_FLOOD_BIT   
+//#define COOLANT_FLOOD_BIT
 #ifdef ENABLE_M7 // Mist coolant disabled by default. See config.h to enable/disable.
   #define COOLANT_MIST_DDR   DDRC
   #define COOLANT_MIST_PORT  PORTC
   #define COOLANT_MIST_BIT   4 // Uno Analog Pin 4
-#endif  
+#endif
 
 // Define user-control controls (cycle start, reset, feed hold) input pins.
 // NOTE: All CONTROLs pins must be on the same port and not on a port with other input pins (limits).
@@ -128,7 +131,7 @@
 #define CONTROL_PCMSK     PCMSK1 // Pin change interrupt register
 #define CONTROL_MASK ((1<<RESET_BIT)|(1<<FEED_HOLD_BIT)|(1<<CYCLE_START_BIT)|(1<<SAFETY_DOOR_BIT))
 #define CONTROL_INVERT_MASK CONTROL_MASK // May be re-defined to only invert certain control pins.
-  
+
 // Define probe switch input pin.
 #define PROBE_DDR       DDRC
 #define PROBE_PIN       PINC
@@ -143,13 +146,13 @@
   #define TCCRA_REGISTER	 TCCR2A
   #define TCCRB_REGISTER	 TCCR2B
   #define OCR_REGISTER     OCR2A
-  
+
   #define COMB_BIT	     COM2A1
   #define WAVE0_REGISTER	 WGM20
   #define WAVE1_REGISTER	 WGM21
   #define WAVE2_REGISTER	 WGM22
   #define WAVE3_REGISTER	 WGM23
-      
+
   // NOTE: On the 328p, these must be the same as the SPINDLE_ENABLE settings.
   #define SPINDLE_PWM_DDR	  DDRB
   #define SPINDLE_PWM_PORT  PORTB
