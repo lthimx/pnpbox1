@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Magnet_conn)(type KiCad)(uri ${KIPRJMOD}/Magnet_conn.pretty)(options "")(descr ""))
+  (lib (name Pick_n_place_head_PCB)(type KiCad)(uri ${KIPRJMOD}/Pick_n_place_head_PCB.pretty)(options "")(descr ""))
+)

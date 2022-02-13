@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Magnet_conn)(type Legacy)(uri ${KIPRJMOD}/Magnet_conn.lib)(options "")(descr ""))
+)
