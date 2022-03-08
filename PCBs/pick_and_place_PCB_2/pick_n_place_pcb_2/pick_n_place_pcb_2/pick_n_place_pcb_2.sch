@@ -243,7 +243,7 @@ A1A
 Text GLabel 5650 3300 1    50   Input ~ 0
 A2A
 Text GLabel 5750 3300 1    50   Input ~ 0
-A2B
+A1B
 Text GLabel 5850 3300 1    50   Input ~ 0
 A2B
 Wire Wire Line

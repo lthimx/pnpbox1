@@ -81,12 +81,12 @@
             119781 -74203.6  119606 -73901.5  119398 -73621.6  119159 -73367.9
             118891 -73143.6  118600 -72951.9  118288 -72795.4  117960 -72676
             117621 -72595.6  117274 -72555.1  116926 -72555.1))
-    (via "Via[0-1]_800:400_um")
+    (via "Via[0-1]_1000:400_um")
     (rule
-      (width 250)
-      (clearance 200.1)
-      (clearance 200.1 (type default_smd))
-      (clearance 50 (type smd_smd))
+      (width 400)
+      (clearance 300.1)
+      (clearance 300.1 (type default_smd))
+      (clearance 75 (type smd_smd))
     )
   )
   (placement
@@ -94,10 +94,10 @@
       (place Amot1 90271.6 -58750.2 front 0 (PN Conn_01x04_Male))
     )
     (component LED_SMD:LED_1206_3216Metric
-      (place blue1 145514 -70078.6 front 180 (PN LED))
+      (place blue1 145400 -64836 front 0 (PN LED))
     )
     (component LED_SMD:LED_1206_3216Metric::1
-      (place green1 145491 -64871.6 front 180 (PN LED))
+      (place green1 145359 -69692.5 front 0 (PN LED))
     )
     (component Magnet_conn:magnet_conn_X5
       (place M1 104800 -82321.4 front 0 (PN magnet_conn_X5))
@@ -107,10 +107,10 @@
       (place M2 145567 -82194.4 front 0 (PN magnet_conn_X5))
     )
     (component Resistor_SMD:R_0805_2012Metric
-      (place R1 137645 -70078.6 front 0 (PN R))
+      (place R1 138887 -64714.1 front 0 (PN R))
     )
     (component Resistor_SMD:R_0805_2012Metric::1
-      (place R2 137541 -65024 front 0 (PN R))
+      (place R2 138968 -69773.8 front 0 (PN R))
     )
     (component "Package_TO_SOT_SMD:SOT-23-5"
       (place U1 140513 -76504.8 front 180 (PN "24AA02-OT"))
@@ -305,9 +305,9 @@
       (shape (rect B.Cu -850 -850 850 850))
       (attach off)
     )
-    (padstack "Via[0-1]_800:400_um"
-      (shape (circle F.Cu 800))
-      (shape (circle B.Cu 800))
+    (padstack "Via[0-1]_1000:400_um"
+      (shape (circle F.Cu 1000))
+      (shape (circle B.Cu 1000))
       (attach off)
     )
   )
@@ -369,29 +369,29 @@
     (class kicad_default "" +3V3 A1A A1B A2A A2B "Net-(R1-Pad2)" "Net-(R2-Pad2)"
       "Net-(U1-Pad5)" SCL SDA Z1A Z1B Z2A Z2B limZ pwm
       (circuit
-        (use_via Via[0-1]_800:400_um)
+        (use_via Via[0-1]_1000:400_um)
       )
       (rule
-        (width 250)
-        (clearance 200.1)
+        (width 400)
+        (clearance 300.1)
       )
     )
     (class +12V +12V
       (circuit
-        (use_via Via[0-1]_800:400_um)
+        (use_via Via[0-1]_1000:400_um)
       )
       (rule
-        (width 700)
-        (clearance 200.1)
+        (width 800)
+        (clearance 300.1)
       )
     )
     (class GND GND
       (circuit
-        (use_via Via[0-1]_800:400_um)
+        (use_via Via[0-1]_1000:400_um)
       )
       (rule
-        (width 700)
-        (clearance 200.1)
+        (width 500)
+        (clearance 300.1)
       )
     )
   )

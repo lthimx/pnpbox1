@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/lmx/work/projects/pnpbox1/PCBs/pick_n_place_head/pick_n_place_head/pick_n_place_head.sch)
-    (date "lun. 07 mars 2022 21:50:07")
+    (date "lun. 07 mars 2022 21:50:46")
     (tool "Eeschema 5.1.6-c6e7f7d~87~ubuntu20.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block

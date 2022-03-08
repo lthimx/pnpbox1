@@ -1,4 +1,4 @@
-update=dim. 06 févr. 2022 21:26:44
+update=lun. 07 mars 2022 21:47:54
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=pick_n_place_head.net
+LastNetListRead=pick_n_place_head2.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -38,8 +38,8 @@ MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=0.25
-ViaDiameter1=0.8
+TrackWidth1=0.4
+ViaDiameter1=1
 ViaDrill1=0.4
 dPairWidth1=0.2
 dPairGap1=0.25
@@ -67,7 +67,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.05
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -237,9 +237,9 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
-TrackWidth=0.25
-ViaDiameter=0.8
+Clearance=0.3
+TrackWidth=0.4
+ViaDiameter=1
 ViaDrill=0.4
 uViaDiameter=0.3
 uViaDrill=0.1
@@ -248,9 +248,9 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=+12V
-Clearance=0.2
-TrackWidth=0.7
-ViaDiameter=0.8
+Clearance=0.3
+TrackWidth=0.8
+ViaDiameter=1
 ViaDrill=0.4
 uViaDiameter=0.3
 uViaDrill=0.1
@@ -259,9 +259,9 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=GND
-Clearance=0.2
-TrackWidth=0.7
-ViaDiameter=0.8
+Clearance=0.3
+TrackWidth=0.5
+ViaDiameter=1
 ViaDrill=0.4
 uViaDiameter=0.3
 uViaDrill=0.1
