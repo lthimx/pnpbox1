@@ -88,87 +88,93 @@ F 3 "" H 4750 4100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:DB15_Female_HighDensity J1
-U 1 1 62070157
-P 5550 2000
-F 0 "J1" V 6259 2395 50  0000 C CNN
-F 1 "DB15_Female_HighDensity" V 6299 2382 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset3.03mm_Housed_MountingHolesOffset4.94mm" H 4600 2400 50  0001 C CNN
-F 3 " ~" H 4600 2400 50  0001 C CNN
-	1    5550 2000
-	0    -1   -1   0   
+L Connector_Generic:Conn_01x05 J1
+U 1 1 62279E99
+P 3900 2050
+F 0 "J1" H 3980 2092 50  0000 L CNN
+F 1 "Conn_01x05" H 3980 2001 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical" H 3900 2050 50  0001 C CNN
+F 3 "~" H 3900 2050 50  0001 C CNN
+	1    3900 2050
+	1    0    0    -1  
 $EndComp
-Text GLabel 5150 2300 3    50   Input ~ 0
-A1A
-Text GLabel 5350 2300 3    50   Input ~ 0
-A2A
-Text GLabel 5550 2300 3    50   Input ~ 0
-A1B
-Text GLabel 5750 2300 3    50   Input ~ 0
-A2B
-Wire Wire Line
-	5950 2300 5950 2600
-Wire Wire Line
-	5950 2600 6150 2600
 $Comp
-L power:+12V #PWR0104
-U 1 1 62080E1E
-P 6150 2600
-F 0 "#PWR0104" H 6150 2450 50  0001 C CNN
-F 1 "+12V" V 6165 2728 50  0000 L CNN
-F 2 "" H 6150 2600 50  0001 C CNN
-F 3 "" H 6150 2600 50  0001 C CNN
-	1    6150 2600
-	0    1    1    0   
+L Connector_Generic:Conn_01x05 J2
+U 1 1 6227BEE4
+P 5750 2050
+F 0 "J2" H 5830 2092 50  0000 L CNN
+F 1 "Conn_01x05" H 5830 2001 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical" H 5750 2050 50  0001 C CNN
+F 3 "~" H 5750 2050 50  0001 C CNN
+	1    5750 2050
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 2300 5050 2550
-Wire Wire Line
-	5250 2300 5250 2550
-Wire Wire Line
-	5450 2300 5450 2550
-Wire Wire Line
-	5650 2300 5650 2550
-Wire Wire Line
-	5850 2300 5850 2550
-Text GLabel 5050 2550 3    50   Input ~ 0
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 6227CC03
+P 7900 2050
+F 0 "J3" H 7980 2092 50  0000 L CNN
+F 1 "Conn_01x05" H 7980 2001 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical" H 7900 2050 50  0001 C CNN
+F 3 "~" H 7900 2050 50  0001 C CNN
+	1    7900 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 3700 2250 0    50   Input ~ 0
 Z1A
-Text GLabel 5250 2550 3    50   Input ~ 0
+Text GLabel 3700 2150 0    50   Input ~ 0
 Z2A
-Text GLabel 5450 2550 3    50   Input ~ 0
+Text GLabel 3700 2050 0    50   Input ~ 0
 Z1B
-Text GLabel 5650 2550 3    50   Input ~ 0
+Text GLabel 3700 1950 0    50   Input ~ 0
 Z2B
 $Comp
-L power:+3.3V #PWR0105
-U 1 1 620828CC
-P 5850 2550
-F 0 "#PWR0105" H 5850 2400 50  0001 C CNN
-F 1 "+3.3V" H 5865 2723 50  0000 C CNN
-F 2 "" H 5850 2550 50  0001 C CNN
-F 3 "" H 5850 2550 50  0001 C CNN
-	1    5850 2550
+L power:+3.3V #PWR0104
+U 1 1 6227FF02
+P 3700 1850
+F 0 "#PWR0104" H 3700 1700 50  0001 C CNN
+F 1 "+3.3V" V 3715 1978 50  0000 L CNN
+F 2 "" H 3700 1850 50  0001 C CNN
+F 3 "" H 3700 1850 50  0001 C CNN
+	1    3700 1850
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5550 1850 0    50   Input ~ 0
+A1A
+Text GLabel 5550 1950 0    50   Input ~ 0
+A2A
+Text GLabel 5550 2050 0    50   Input ~ 0
+A1B
+Text GLabel 5550 2150 0    50   Input ~ 0
+A2B
+$Comp
+L power:+12V #PWR0105
+U 1 1 62282B39
+P 5550 2250
+F 0 "#PWR0105" H 5550 2100 50  0001 C CNN
+F 1 "+12V" H 5565 2423 50  0000 C CNN
+F 2 "" H 5550 2250 50  0001 C CNN
+F 3 "" H 5550 2250 50  0001 C CNN
+	1    5550 2250
 	-1   0    0    1   
 $EndComp
-Text GLabel 5950 1700 1    50   Input ~ 0
-SDA
-Text GLabel 5750 1700 1    50   Input ~ 0
+Text GLabel 7700 2250 0    50   Input ~ 0
+pwm
+Text GLabel 7700 1950 0    50   Input ~ 0
 SCL
-Text GLabel 5550 1700 1    50   Input ~ 0
+Text GLabel 7700 1850 0    50   Input ~ 0
+SDA
+Text GLabel 7700 2050 0    50   Input ~ 0
 limZ
-Wire Wire Line
-	5350 1700 5350 1550
 $Comp
 L power:GND #PWR0106
-U 1 1 62084F8E
-P 5350 1550
-F 0 "#PWR0106" H 5350 1300 50  0001 C CNN
-F 1 "GND" H 5355 1377 50  0000 C CNN
-F 2 "" H 5350 1550 50  0001 C CNN
-F 3 "" H 5350 1550 50  0001 C CNN
-	1    5350 1550
-	-1   0    0    1   
+U 1 1 6228319E
+P 7700 2150
+F 0 "#PWR0106" H 7700 1900 50  0001 C CNN
+F 1 "GND" V 7705 2022 50  0000 R CNN
+F 2 "" H 7700 2150 50  0001 C CNN
+F 3 "" H 7700 2150 50  0001 C CNN
+	1    7700 2150
+	0    1    1    0   
 $EndComp
-Text GLabel 5150 1700 1    50   Input ~ 0
-pwm
 $EndSCHEMATC

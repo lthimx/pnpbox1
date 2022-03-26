@@ -1,4 +1,4 @@
-update=mar. 08 mars 2022 09:35:13
+update=mar. 08 mars 2022 22:38:12
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=fixed_head_pcb2.net
+LastNetListRead=fixed_head_pcb.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -38,7 +38,7 @@ MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=0.25
+TrackWidth1=0.4
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -237,8 +237,8 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
-TrackWidth=0.25
+Clearance=0.4
+TrackWidth=0.4
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -248,7 +248,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=alim
-Clearance=0.2
+Clearance=0.4
 TrackWidth=0.7
 ViaDiameter=0.8
 ViaDrill=0.4

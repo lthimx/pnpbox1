@@ -113,10 +113,6 @@ Text GLabel 4900 5100 0    50   Input ~ 0
 A2B
 Text GLabel 4900 3400 0    50   Input ~ 0
 SDA
-Text GLabel 4900 3500 0    50   Input ~ 0
-SCL
-Wire Wire Line
-	4900 3700 4450 3700
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 6200D897
@@ -127,17 +123,6 @@ F 2 "" H 4150 1800 50  0001 C CNN
 F 3 "" H 4150 1800 50  0001 C CNN
 	1    4150 1800
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 6200DAEE
-P 4450 3700
-F 0 "#PWR0102" H 4450 3450 50  0001 C CNN
-F 1 "GND" H 4455 3527 50  0000 C CNN
-F 2 "" H 4450 3700 50  0001 C CNN
-F 3 "" H 4450 3700 50  0001 C CNN
-	1    4450 3700
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:+12V #PWR0103
@@ -268,4 +253,19 @@ F 3 "" H 6700 4000 50  0001 C CNN
 	1    6700 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6200DAEE
+P 4450 3700
+F 0 "#PWR0102" H 4450 3450 50  0001 C CNN
+F 1 "GND" H 4455 3527 50  0000 C CNN
+F 2 "" H 4450 3700 50  0001 C CNN
+F 3 "" H 4450 3700 50  0001 C CNN
+	1    4450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3700 4450 3700
+Text GLabel 4900 3500 0    50   Input ~ 0
+SCL
 $EndSCHEMATC
