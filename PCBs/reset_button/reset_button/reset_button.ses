@@ -1,0 +1,157 @@
+
+(session reset_button.ses
+  (base_design reset_button.dsn)
+  (placement
+    (resolution um 10)
+    (component Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical
+      (place J1 1260000 -1029000 front 90)
+    )
+    (component pnp_box:reset_button
+      (place SW1 1310000 -1063000 front 0)
+    )
+    (component pnp_box:reset_button::1
+      (place SW2 1310000 -850000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "5.1.6-c6e7f7d~87~ubuntu20.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net B_led
+        (wire
+          (path F.Cu 4000
+            1265000 -1158500
+            1265000 -1127497
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            1265000 -1127497
+            1260000 -1122497
+            1260000 -1029000
+          )
+        )
+      )
+      (net B_sig
+        (wire
+          (path F.Cu 4000
+            1285400 -1029000
+            1285400 -1043503
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            1310000 -1136000
+            1278590 -1104590
+            1278590 -1050313
+            1285400 -1043503
+          )
+        )
+      )
+      (net O_led
+        (wire
+          (path F.Cu 4000
+            1265000 -945500
+            1265000 -976503
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            1265000 -976503
+            1280711 -976503
+            1333208 -1029000
+            1336200 -1029000
+          )
+        )
+      )
+      (net O_sig
+        (wire
+          (path F.Cu 4000
+            1310000 -923000
+            1301283 -914283
+            1256131 -914283
+            1243525 -926889
+            1243525 -966613
+            1305912 -1029000
+            1310800 -1029000
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path F.Cu 7000
+            1355000 -1158500
+            1355000 -1125997
+          )
+        )
+        (wire
+          (path F.Cu 7000
+            1355000 -1125997
+            1361600 -1119397
+            1361600 -1029000
+          )
+        )
+        (wire
+          (path F.Cu 7000
+            1342503 -1179000
+            1342503 -1170997
+            1355000 -1158500
+          )
+        )
+        (wire
+          (path F.Cu 7000
+            1310000 -1179000
+            1342503 -1179000
+          )
+        )
+        (wire
+          (path F.Cu 7000
+            1355000 -966000
+            1355000 -1006397
+            1361600 -1012997
+          )
+        )
+        (wire
+          (path F.Cu 7000
+            1355000 -945500
+            1355000 -966000
+          )
+        )
+        (wire
+          (path F.Cu 7000
+            1342503 -966000
+            1355000 -966000
+          )
+        )
+        (wire
+          (path F.Cu 7000
+            1310000 -966000
+            1342503 -966000
+          )
+        )
+        (wire
+          (path F.Cu 7000
+            1361600 -1029000
+            1361600 -1012997
+          )
+        )
+      )
+    )
+  )
+)

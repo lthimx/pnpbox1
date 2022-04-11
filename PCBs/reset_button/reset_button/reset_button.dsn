@@ -1,0 +1,141 @@
+(pcb /home/lmx/work/projects/pnpbox1/PCBs/reset_button/reset_button/reset_button.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "5.1.6-c6e7f7d~87~ubuntu20.04.1")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  141000 -122900  121000 -122900  121000 -82900  141000 -82900
+            141000 -122900)
+    )
+    (via "Via[0-1]_800:400_um")
+    (rule
+      (width 400)
+      (clearance 400.1)
+      (clearance 400.1 (type default_smd))
+      (clearance 100 (type smd_smd))
+    )
+  )
+  (placement
+    (component Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical
+      (place J1 126000 -102900 front 90 (PN Conn_01x05))
+    )
+    (component pnp_box:reset_button
+      (place SW1 131000 -106300 front 0 (PN SW_DIP_x02))
+    )
+    (component pnp_box:reset_button::1
+      (place SW2 131000 -85000 front 0 (PN SW_DIP_x02))
+    )
+  )
+  (library
+    (image Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical
+      (outline (path signal 50  -1800 -11900  -1800 1800))
+      (outline (path signal 50  1750 -11900  -1800 -11900))
+      (outline (path signal 50  1750 1800  1750 -11900))
+      (outline (path signal 50  -1800 1800  1750 1800))
+      (outline (path signal 120  0 1330  1330 1330))
+      (outline (path signal 120  1330 1330  1330 0))
+      (outline (path signal 120  1330 -1270  1330 -11490))
+      (outline (path signal 120  -1330 -11490  1330 -11490))
+      (outline (path signal 120  -1330 -1270  -1330 -11490))
+      (outline (path signal 120  -1330 -1270  1330 -1270))
+      (outline (path signal 100  -1270 -11430  -1270 1270))
+      (outline (path signal 100  1270 -11430  -1270 -11430))
+      (outline (path signal 100  1270 635  1270 -11430))
+      (outline (path signal 100  635 1270  1270 635))
+      (outline (path signal 100  -1270 1270  635 1270))
+      (pin Rect[A]Pad_1700x1700_um 1 0 0)
+      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
+      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
+      (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
+      (pin Oval[A]Pad_1700x1700_um 5 0 -10160)
+    )
+    (image pnp_box:reset_button
+      (pin Oval[A]Pad_5000x3000_um 0 0 -3000)
+      (pin Oval[A]Pad_5000x3000_um 2 0 -7300)
+      (pin Oval[A]Pad_5000x3000_um (rotate 90) 1 -4500 -9550)
+      (pin Oval[A]Pad_5000x3000_um (rotate 270) 4 4500 -9550)
+      (pin Oval[A]Pad_5000x3000_um 3 0 -11600)
+    )
+    (image pnp_box:reset_button::1
+      (pin Oval[A]Pad_5000x3000_um 3 0 -11600)
+      (pin Oval[A]Pad_5000x3000_um (rotate 270) 4 4500 -9550)
+      (pin Oval[A]Pad_5000x3000_um (rotate 90) 1 -4500 -9550)
+      (pin Oval[A]Pad_5000x3000_um 2 0 -7300)
+      (pin Oval[A]Pad_5000x3000_um 0 0 -3000)
+    )
+    (padstack Oval[A]Pad_1700x1700_um
+      (shape (path F.Cu 1700  0 0  0 0))
+      (shape (path B.Cu 1700  0 0  0 0))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_5000x3000_um
+      (shape (path F.Cu 3000  -1000 0  1000 0))
+      (shape (path B.Cu 3000  -1000 0  1000 0))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1700x1700_um
+      (shape (rect F.Cu -850 -850 850 850))
+      (shape (rect B.Cu -850 -850 850 850))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+  )
+  (network
+    (net B_led
+      (pins J1-1 SW1-1)
+    )
+    (net B_sig
+      (pins J1-2 SW1-2)
+    )
+    (net O_led
+      (pins J1-4 SW2-1)
+    )
+    (net O_sig
+      (pins J1-3 SW2-2)
+    )
+    (net GND
+      (pins J1-5 SW1-4 SW1-3 SW2-3 SW2-4)
+    )
+    (class kicad_default "" B_led B_sig O_led O_sig
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 400)
+        (clearance 400.1)
+      )
+    )
+    (class gnd GND
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 700)
+        (clearance 400.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
