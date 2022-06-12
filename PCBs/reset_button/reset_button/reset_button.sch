@@ -41,7 +41,7 @@ U 1 1 6250043C
 P 7400 3300
 F 0 "J1" H 7480 3342 50  0000 L CNN
 F 1 "Conn_01x05" H 7480 3251 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 7400 3300 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical" H 7400 3300 50  0001 C CNN
 F 3 "~" H 7400 3300 50  0001 C CNN
 	1    7400 3300
 	1    0    0    -1  

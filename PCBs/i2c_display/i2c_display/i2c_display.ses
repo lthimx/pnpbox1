@@ -1,0 +1,155 @@
+
+(session i2c_display.ses
+  (base_design i2c_display.dsn)
+  (placement
+    (resolution um 10)
+    (component Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical
+      (place J1 1700000 -1150000 front 180)
+    )
+    (component "Connector_JST:JST_EH_B7B-EH-A_1x07_P2.50mm_Vertical"
+      (place J2 1960000 -1150000 back 270)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "5.1.6-c6e7f7d~87~ubuntu20.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net 1
+        (wire
+          (path F.Cu 2500
+            1960000 -1150000
+            1700000 -1150000
+          )
+        )
+      )
+      (net 2
+        (wire
+          (path F.Cu 2500
+            1700000 -1124600
+            1711753 -1124600
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1960000 -1125000
+            1960000 -1136753
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1960000 -1136753
+            1948247 -1136753
+            1940145 -1144855
+            1732008 -1144855
+            1711753 -1124600
+          )
+        )
+      )
+      (net 3
+        (wire
+          (path F.Cu 2500
+            1700000 -1099200
+            1711753 -1099200
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1960000 -1100000
+            1712553 -1100000
+            1711753 -1099200
+          )
+        )
+      )
+      (net 4
+        (wire
+          (path F.Cu 2500
+            1700000 -1073800
+            1711753 -1073800
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1960000 -1075000
+            1712953 -1075000
+            1711753 -1073800
+          )
+        )
+      )
+      (net 5
+        (wire
+          (path F.Cu 2500
+            1700000 -1048400
+            1711753 -1048400
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1960000 -1050000
+            1713353 -1050000
+            1711753 -1048400
+          )
+        )
+      )
+      (net 6
+        (wire
+          (path F.Cu 2500
+            1700000 -1023000
+            1711753 -1023000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1960000 -1025000
+            1960000 -1036753
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1960000 -1036753
+            1948247 -1036753
+            1941695 -1043305
+            1732058 -1043305
+            1711753 -1023000
+          )
+        )
+      )
+      (net 7
+        (wire
+          (path F.Cu 2500
+            1960000 -1000000
+            1946997 -1000000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1946997 -1000000
+            1944597 -997600
+            1711753 -997600
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1700000 -997600
+            1711753 -997600
+          )
+        )
+      )
+    )
+  )
+)

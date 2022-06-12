@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Pick_and_place_PCB)(type Legacy)(uri ${KIPRJMOD}/Pick_and_place_PCB.lib)(options "")(descr ""))
-)

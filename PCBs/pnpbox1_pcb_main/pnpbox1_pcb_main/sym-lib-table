@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name pnpbox1_pcb_main-rescue)(type Legacy)(uri ${KIPRJMOD}/pnpbox1_pcb_main-rescue.lib)(options "")(descr ""))
+)

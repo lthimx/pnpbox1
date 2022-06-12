@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/lmx/work/projects/pnpbox1/PCBs/reset_button/reset_button/reset_button.sch)
-    (date "ven. 08 avril 2022 14:07:58")
+    (date "dim. 17 avril 2022 18:38:34")
     (tool "Eeschema 5.1.6-c6e7f7d~87~ubuntu20.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -31,7 +31,7 @@
       (tstamp 624FFD51))
     (comp (ref J1)
       (value Conn_01x05)
-      (footprint Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical)
+      (footprint Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_01x05) (description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
